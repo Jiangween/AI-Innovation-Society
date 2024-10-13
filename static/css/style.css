@@ -1,0 +1,170 @@
+/* 全局样式：设置整个页面的基础风格 */
+body {
+    margin: 0; /* 移除浏览器默认的外边距 */
+    padding: 0; /* 移除浏览器默认的内边距 */
+    font-family: 'Helvetica', 'Arial', sans-serif; /* 设置字体为 Helvetica 或 Arial */
+    background-color: #f0f2f5; /* 背景色设置为浅灰色 */
+    color: #333; /* 文本颜色为深灰色 */
+    line-height: 1.6; /* 设置文本的行高，提升可读性 */
+}
+
+/* 导航栏链接样式：控制导航栏内的链接外观 */
+nav a {
+    color: white; /* 链接文字为白色 */
+    margin: 0 20px; /* 链接之间的水平间距 */
+    text-decoration: none; /* 移除链接下划线 */
+    font-size: 1.2em; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    padding: 10px; /* 增加内边距，提高点击区域 */
+    background-color: transparent; /* 透明背景，避免按钮样式 */
+    border-radius: 0; /* 移除圆角效果 */
+}
+
+/* 导航栏链接悬停效果 */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 悬停时显示轻微透明的白色背景 */
+}
+
+/* 轮播图图片调整：确保图片不变形且保持适当比例 */
+.carousel-item img {
+    max-height: 400px; /* 图片的最大高度为 400px */
+    object-fit: cover; /* 图片自动裁剪以填满容器 */
+}
+
+/* Read More 按钮样式：用于“了解更多”的链接 */
+.read-more-btn {
+    display: inline-block; /* 将按钮设置为内联块元素 */
+    padding: 10px 20px; /* 增加内边距 */
+    font-size: 16px; /* 按钮文字大小 */
+    font-weight: bold; /* 按钮文字加粗 */
+    color: white; /* 按钮文字颜色为白色 */
+    background-color: #499cac; /* 背景色为浅蓝绿 */
+    border-radius: 5px; /* 按钮的圆角 */
+    text-decoration: none; /* 移除下划线 */
+    transition: background-color 0.3s; /* 背景色过渡效果 */
+}
+
+/* Read More 按钮悬停效果 */
+.read-more-btn:hover {
+    background-color: #006c80; /* 悬停时背景色变为深蓝色 */
+}
+
+/* 部分容器样式：控制各个部分（如实验室介绍）的布局 */
+#caption0 {
+    background: #f7f7f7; /* 背景色为浅灰 */
+    padding: 2rem; /* 内边距 */
+    border-radius: 10px; /* 圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微的阴影效果 */
+    text-align: center; /* 文本居中 */
+    margin: 30px 0; /* 上下外边距 */
+}
+
+/* 标题分割线样式：标题下的小横线 */
+.slider-text-separator {
+    width: 50px; /* 分割线宽度 */
+    height: 4px; /* 分割线高度 */
+    background-color: #007bff; /* 分割线颜色为蓝色 */
+    margin: 1rem auto; /* 居中显示 */
+    border-radius: 2px; /* 圆角效果 */
+}
+
+/* 段落文字样式：控制文字的显示效果 */
+.slide-text p {
+    font-size: 1rem; /* 字体大小 */
+    color: #333; /* 文本颜色为深灰 */
+    margin-bottom: 1rem; /* 段落底部外边距 */
+}
+
+/* Read More 链接样式：具体控制“了解更多”按钮 */
+.readmore a {
+    text-decoration: none; /* 移除下划线 */
+    font-weight: bold; /* 链接加粗 */
+    color: white; /* 链接文字颜色 */
+    padding: 10px 20px; /* 增加内边距 */
+    border-radius: 30px; /* 圆角效果 */
+    background-color: #499cac; /* 背景色为浅蓝绿 */
+    transition: background-color 0.3s; /* 背景色过渡效果 */
+}
+
+/* Read More 链接悬停效果 */
+.readmore a:hover {
+    background-color: #006c80; /* 悬停时背景色变深 */
+}
+
+/* 页脚样式：控制页面底部的外观 */
+footer {
+    background-color: #1f2d3d; /* 背景色为深蓝 */
+    color: white; /* 文本颜色为白色 */
+    text-align: center; /* 文本居中对齐 */
+    padding: 20px 0; /* 上下内边距 */
+}
+
+.img-fluid.award-image {
+    width: 100%;            /* 图片宽度自适应父容器 */
+    max-width: 250px;        /* 限制图片最大宽度 */
+    height: 200px;           /* 限制图片最大高度 */
+    object-fit: contain;     /* 保持图片比例并完整显示 */
+    border-radius: 10px;     /* 圆角样式 */
+    margin: 0 auto 15px;     /* 居中图片，并增加底部间距 */
+    display: block;          /* 确保图片块级显示，便于居中 */
+    background-color: #f8f9fa; /* 给图片容器添加背景色，以防透明图片 */
+    padding: 5px;            /* 给图片添加内边距，提高视觉效果 */
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h2, h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.advisor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.advisor-card h4 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.advisor-card p {
+    font-size: 0.9rem;
+}
