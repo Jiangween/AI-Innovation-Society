@@ -27,7 +27,7 @@ nav a:hover {
 
 /* 轮播图图片调整：确保图片不变形且保持适当比例 */
 .carousel-item img {
-    max-height: 400px; /* 图片的最大高度为 400px */
+    max-height: 600px; /* 图片的最大高度为 400px */
     object-fit: cover; /* 图片自动裁剪以填满容器 */
 }
 
@@ -154,10 +154,20 @@ footer {
     padding: 15px 0;
 }
 
+.advisor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    min-height: 400px; /* 确保每个卡片的最小高度一致 */
+}
+
 .advisor-card img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
+    object-fit: cover; /* 保持图像比例，确保不变形 */
+    border-radius: 50%; /* 圆形头像 */
 }
 
 .advisor-card h4 {
@@ -167,4 +177,7 @@ footer {
 
 .advisor-card p {
     font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 5px 0;
+    flex-grow: 1; /* 保证文字部分不会超出范围，灵活占据空间 */
 }
